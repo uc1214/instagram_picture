@@ -5,11 +5,6 @@
     <%= link_to "写真を投稿する", new_picture_path, class: 'btn btn-default' %>
     <% @pictures.each do |picture| %>
     <div class="row">
-      <div>
-        <div class="col-xs-8 col-sm-7 col-md-5 col-lg-5">
-          <%= picture.user.name %>が投稿しました。
-        </div>
-      </div>
       <div class="clear field-blogs-content ">
         <div><%= image_tag(picture.img, :class => "img") %></div>
         <p><%= picture.content %></p>
